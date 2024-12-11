@@ -37,13 +37,13 @@
     "prisma": "^5.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vite-tsconfig-paths": "^4.3.1"
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "devDependencies": {
     "@remix-run/eslint-config": "^2.7.1",
     "@shopify/api-codegen-preset": "^1.0.1",
     "@types/eslint": "^8.40.0",
-    "@types/node": "^20.6.3",
+    "@types/node": "^22.2.0",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
     "eslint": "^8.42.0",
@@ -59,10 +59,10 @@
     "@shopify/plugin-cloudflare"
   ],
   "resolutions": {
-    "undici": "6.13.0"
+    "undici": "^6.11.1"
   },
   "overrides": {
-    "undici": "6.13.0"
+   "undici": "^6.11.1"
   },
   "author": "92321"
 }
