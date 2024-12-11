@@ -1,0 +1,116 @@
+.customizewraperheader{
+    font-size: 20px;
+    margin: 20px 0px;
+    font-weight: 600;
+}
+.customizeheadertitle{
+    font-size: 20px;
+  
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.searchbarbtn{
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+}
+.searchbarfield{
+    width:90%;
+}
+
+.searchbarproductimg{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #ece9e9;
+}
+.searchbarproductimg > img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.searchbarproductswrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.searchproductitle{
+    font-size: 14px;
+    font-weight: bold;
+}
+.spinner{
+    margin:0 auto;
+    width: fit-content;
+    margin-top: 20px;
+}
+.productImage{
+    height: 90px;
+    width: 90px;
+    background: #efeded;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imagesproductwrapper{
+    margin-bottom: 20px;
+}
+.dropzone{
+    position: absolute;
+    border: 1px dashed;
+    transform: translate(-50%, -50%);
+}
+.patchestable {
+    border-collapse: collapse;
+    width: 100%;
+}
+.patchestable th, .patchestable td{
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.patchestable th {
+    background-color: #f2f2f2;
+}
+.patchestable td {
+    font-weight: 600;
+}
+.note{
+    font-size: 11px;
+    font-weight: bold;
+    background: #e5e2e2;
+    letter-spacing: 0.2px;
+    width: fit-content;
+    color: #ff3838;
+    border-radius: 5px;
+    padding: 2px 10px;
+    display: flex;
+    gap: 5px;
+}
+.newproductitle{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.actionbtns{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}

@@ -1,0 +1,182 @@
+.mainpatchwrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+.mainheading > h1{
+    font-size: 30px;
+    color: black;
+}
+
+.patchImageDiv{
+    height: 50px;
+    padding: 4px;
+    width: 50px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+.pathimageaction{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.allpatchesWrapper{
+    padding-top: 20px;
+}
+.patchImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.actionbuttons{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.patchsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 12px;
+}
+
+.pathimageaction{
+    width: fit-content;
+}
+.patchdisplay{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    padding: 3px 40px 3px 10px;
+}
+.patchname{
+    background: #ffacac;
+    width: max-content;
+    color: #4a0101;
+    border-radius: 5px;
+  
+}
+.patchname > svg{
+    width: 18px;
+    height: 18px;
+}
+.patchprice{
+    background: #3f3fd6;
+    border-radius: 5px;
+    color: #ffffff;
+    width: fit-content;
+}
+.patcdimensions{
+    background: #bfefd9;
+    border-radius: 5px;
+    color: #065106;
+    width: fit-content;
+}
+
+.patchdescriptin{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.defs{
+    fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;
+}
+.formbuttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+#AppFrameMain{
+    border: none;
+}
+
+.framerapper > .Polaris-Frame{
+background-color: #000000;
+}
+.addcustomproductmodal{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #74747466;
+    height: 100%;
+}
+
+.deletemodal{
+    height: fit-content !important;
+    top:30% !important;
+}
+.addcustomproductmodalcontent{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 39%;
+    height: 90%;
+    background: white;
+    border-radius: 15px;
+}
+.addcustomproductmodalsizecontent{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 39%;
+    height:fit-content;
+    background: white;
+    border-radius: 15px;
+}
+.addcustomproductmodalheader{
+    display: flex;
+    padding: 9px 20px;
+    border-bottom: 1px solid #dad7d7;
+}
+.addcustomproductmodaltitle{
+    font-weight: bold;
+}
+.patchproductimage{
+    height: 50px;
+    width: 50px;
+    margin: 10px 0;
+    object-fit: contain;
+ }
+.searchheader{
+    display: flex;
+    justify-content: space-between;
+}
+.searchbar{
+    width: 80%;
+}
+.searchbarButtons{
+    display: flex;
+    align-items: end;
+    gap: 8px;
+    padding-bottom: 4px;
+}
+.patchestable {
+    border-collapse: collapse;
+    width: 100%;
+}
+.patchestable th, .patchestable td{
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.patchestable th {
+    background-color: #f2f2f2;
+}
+.spinner{
+    margin:0 auto;
+}
+.editmodalheader{
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+   .addcustomproductmodalcontent{
+    width: 80%;
+   } 
+}

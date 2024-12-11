@@ -1,0 +1,22 @@
+
+ /*Formfield Css */
+ 
+ .formfield{
+   display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    gap: 6px;
+ }
+ .fieldinput{
+  outline: none;
+  border-radius: 5px;
+  height: 15px;
+  border: 1px solid #ececec;
+  font-size: 13px;
+  padding: 13px 5px;
+ }
+ .label{
+  font-size: 14px;
+ }
+ 
+  
