@@ -26,6 +26,8 @@ interface LolaAlphabetsCreateInput {
 
 
 export async function action({ request }: ActionFunctionArgs) {
+ 
+
   // Parse form data
   const formData = await request.formData();
 
