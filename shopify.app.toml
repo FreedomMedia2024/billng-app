@@ -3,7 +3,7 @@
 client_id = "e05c78f3272e92d3baca771c5a02eda2"
 name = "Patch Customizer"
 handle = "patch-customizer-1"
-application_url = "https://paying-ds-unlock-barn.trycloudflare.com"
+application_url = "https://possibilities-pediatric-ev-george.trycloudflare.com"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://paying-ds-unlock-barn.trycloudflare.com/auth/callback",
-  "https://paying-ds-unlock-barn.trycloudflare.com/auth/shopify/callback",
-  "https://paying-ds-unlock-barn.trycloudflare.com/api/auth/callback"
+  "https://possibilities-pediatric-ev-george.trycloudflare.com/auth/callback",
+  "https://possibilities-pediatric-ev-george.trycloudflare.com/auth/shopify/callback",
+  "https://possibilities-pediatric-ev-george.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

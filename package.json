@@ -23,7 +23,7 @@
     "node": "^18.20 || ^20.10 || >=21.0.0"
   },
   "dependencies": {
-    "@prisma/client": "^5.11.0",
+    "@prisma/client": "^5.22.0",
     "@remix-run/dev": "^2.7.1",
     "@remix-run/node": "^2.7.1",
     "@remix-run/react": "^2.7.1",
@@ -62,7 +62,7 @@
     "undici": "^6.11.1"
   },
   "overrides": {
-   "undici": "^6.11.1"
+    "undici": "^6.11.1"
   },
   "author": "92321"
 }
