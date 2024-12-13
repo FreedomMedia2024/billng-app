@@ -9,14 +9,12 @@ generator client {
 // enough when changing adapters.
 // See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
 datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:dev.sqlite"
 }
 
-
 model Session {
-  session_id  String    @id @default(auto()) @map("_id") @db.ObjectId
-  id            String    @unique
+  id            String    @id
   shop          String
   state         String
   isOnline      Boolean   @default(false)
@@ -31,126 +29,4 @@ model Session {
   locale        String?
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
-}
-model alphabets{
-  id              String     @id @default(auto()) @map("_id") @db.ObjectId
-  image       String
-  name        String
-  price       String
-  width       String
-  height      String
-}
-
-model lolaAlphabets{
-  id              String     @id @default(auto()) @map("_id") @db.ObjectId
-  image       String
-  name        String
-  price       String
-  height      String?
-  width       String?
-  alphabetname  String?
-  product_id   String?
-}
-model lolaPatches{
-  id          String     @id @default(auto()) @map("_id") @db.ObjectId
-  image       String
-  variant_id  String
-  price       String
-  height      String?
-  width       String?
-  patchname   String?
-  product_id   String?
-}
-
-model FrontImgData{
-  id               String     @id @default(auto()) @map("_id") @db.ObjectId
-  FproductId      String      @unique
-  FproductTitle   String
-  FProductImg     String  
-  FHeight         String
-  FWidth          String
-  FTop            String
-  FLeft           String
-  BHeight         String
-  BWidth          String
-  BTop            String
-  BLeft           String
-  Backimg         String
-}
-model ColorVariants{
-  colorvariant_id String @id @default(auto()) @map("_id") @db.ObjectId
-  id              String 
-  productImg      String
-  Variants        String
-  backImg         String
-  colorname       String?
-}
-
-model  check{
-  id              String     @id @default(auto()) @map("_id") @db.ObjectId
-  productId       String
-  productImg      String
-  Variants        String
-  backImg         String
-}
-model SizeVariants{
-  sizevariant_id String @id @default(auto()) @map("_id") @db.ObjectId
-  id             String 
-  Smalll         String
-  Medium         String
-  Large          String
-  Extra_Large    String
-}
-model embImgData{
-  id               String     @id @default(auto()) @map("_id") @db.ObjectId
-  FproductId      String      @unique
-  FproductTitle   String
-  FProductImg     String  
-  FHeight         String
-  FWidth          String
-  FTop            String
-  FLeft           String
-  BHeight         String
-  BWidth          String
-  BTop            String
-  BLeft           String
-  Backimg         String
-  FRAHeight       String
-  FRAWidth        String
-  FRATop          String
-  FRALeft         String
-  FLAHeight       String
-  FLAWidth        String
-  FLATop          String
-  FLALeft         String
-  BRAHeight       String
-  BRAWidth        String
-  BRATop          String
-  BRALeft         String
-  BLAHeight       String
-  BLAWidth        String
-  BLATop          String
-  BLALeft         String
-}
-                                                
-model threadsColor{
-  id               String     @id @default(auto()) @map("_id") @db.ObjectId
-  ColorName       String
-  ColorTitle       String
-}
-model fonts {
-  id                String @id @default(auto()) @map("_id") @db.ObjectId
-  fontName          String
-  fontTitle         String
-  Category          String
-  Value             String
-  FeatureImagefont  String
-}
-model checkingImageData{
-  colorvariant_id String @id @default(auto()) @map("_id") @db.ObjectId
-  id              String 
-  colorname       String
-  productImg      String
-  Variants        String
-  backImg         String
 }
