@@ -1,10 +1,10 @@
 {
   "name": "patch-customizer",
   "private": true,
-"scripts": {
+  "scripts": {
     "build": "remix vite:build",
     "dev": "shopify app dev",
-    "predev": "cross-env DEBUG='*prisma*' prisma generate && prisma db push",
+    "predev": "prisma generate && prisma db push",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
     "deploy": "shopify app deploy",
@@ -12,7 +12,7 @@
     "env": "shopify app env",
     "start": "remix-serve ./build/server/index.js",
     "docker-start": "npm run setup && npm run start",
-    "setup": "cross-env DEBUG='*prisma*' prisma generate && prisma db push",
+    "setup": "prisma generate && prisma db push",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "shopify": "shopify",
     "prisma": "prisma",
