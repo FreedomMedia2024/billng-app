@@ -36,7 +36,7 @@ export const loader: LoaderFunction = async ({ request }) => {
             ordersResponse: data // Pass the complete response from Shopify API
         });
     } catch (err) {
-        console.error('Error fetching orders:', err);
+        console.error('Error fetchinggg orders:', err);
         return json({ error: 'Failed to fetch orders' }, { status: 500 });
     }
 };
