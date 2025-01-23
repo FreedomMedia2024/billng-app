@@ -25,7 +25,7 @@ export let loader: LoaderFunction = async () => {
             // Add more product details as needed
         };
         let apkikay = 'e4ab98c8ab2fec28036cf89db9621d06';
-        let pass = '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';
+        let pass = 'shpat_45fd5975f26efc608a5b6606375ad9f';
         const response = await fetch('https://z9-developers.myshopify.com/admin/api/2023-10/products.json', {
             method: 'POST',
             headers: {
