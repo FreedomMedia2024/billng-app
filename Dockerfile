@@ -6,7 +6,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-# Install the available version of OpenSSL
+# Install the available version of OpenSS
 RUN apk add --no-cache openssl=1.1.1w-r1
 
 COPY package.json package-lock.json* ./ 
@@ -17,5 +17,6 @@ RUN npm remove @shopify/cli
 COPY . .
 
 RUN npm run build
+RUN openssl version
 
 CMD ["npm", "run", "docker-start"]
