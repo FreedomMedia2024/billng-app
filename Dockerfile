@@ -6,6 +6,9 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
+# Install OpenSSL compatibility for Shopify requirements
+RUN apk add --no-cache openssl1.1-compat
+
 COPY package.json package-lock.json* ./
 
 RUN npm ci --omit=dev && npm cache clean --force
