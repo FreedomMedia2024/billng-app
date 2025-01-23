@@ -1,21 +1,19 @@
 FROM node:18-alpine
 
-RUN apk add --no-cache build-base curl
+EXPOSE 3000
 
-# Download and compile OpenSSL 1.1.x
-RUN curl -O https://www.openssl.org/source/openssl-1.1.1u.tar.gz && \
-    tar -xzf openssl-1.1.1u.tar.gz && \
-    cd openssl-1.1.1u && \
-    ./config && make && make install && \
-    cd .. && rm -rf openssl-1.1.1u*
-
-COPY package.json package-lock.json* ./
-
-RUN npm ci --omit=dev && npm cache clean --force
-RUN npm remove @shopify/cli
-
+WORKDIR /app
 COPY . .
 
+ENV NODE_ENV=production
+
+RUN npm install --omit=dev
+# Remove CLI packages since we don't need them in production by default.
+# Remove this line if you want to run CLI commands in your container.
+RUN npm remove @shopify/app @shopify/cli
 RUN npm run build
+
+# You'll probably want to remove this in production, it's here to make it easier to test things!
+RUN rm -f prisma/dev.sqlite
 
 CMD ["npm", "run", "docker-start"]
