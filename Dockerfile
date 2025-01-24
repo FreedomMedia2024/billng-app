@@ -1,24 +1,36 @@
-FROM node:18-alpine3.16
+# Use the node version you need
+FROM node:18-alpine
 
+# Expose port 3000 for the application
 EXPOSE 3000
 
+# Set working directory to /app
 WORKDIR /app
 
+# Set the environment to production
 ENV NODE_ENV=production
 
-# Install the available version of OpenSS
-RUN apk add --no-cache openssl=1.1.1w-r1
+# Install OpenSSL (latest available version)
+RUN apk add --no-cache openssl
 
-COPY package.json package-lock.json* ./ 
+# Copy package.json and package-lock.json to install dependencies
+COPY package.json package-lock.json* ./
 
+# Install dependencies in production mode and clean cache
 RUN npm ci --omit=dev && npm cache clean --force
+
+# Remove unnecessary dependencies
 RUN npm remove @shopify/cli
 
+# Copy the rest of the application files
 COPY . .
 
+# Build the app
 RUN npm run build
-RUN node --version
 
+# Check node version and openssl version
+RUN node --version
 RUN openssl version
 
+# Start the application with the appropriate npm command
 CMD ["npm", "run", "docker-start"]
