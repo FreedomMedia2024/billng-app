@@ -1,4 +1,4 @@
-FROM node:18.20-alpine
+FROM node:18-alpine3.16
 
 EXPOSE 3000
 
@@ -18,6 +18,7 @@ COPY . .
 
 RUN npm run build
 RUN node --version
+
 RUN openssl version
 
 CMD ["npm", "run", "docker-start"]
