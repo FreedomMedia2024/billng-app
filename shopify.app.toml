@@ -3,7 +3,7 @@
 client_id = "e05c78f3272e92d3baca771c5a02eda2"
 name = "Patch Customizer"
 handle = "patch-customizer-1"
-application_url = "https://struct-guides-ultimate-motion.trycloudflare.com"
+application_url = "https://king-prawn-app-4ujjs.ondigitalocean.app/"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://struct-guides-ultimate-motion.trycloudflare.com/auth/callback",
-  "https://struct-guides-ultimate-motion.trycloudflare.com/auth/shopify/callback",
-  "https://struct-guides-ultimate-motion.trycloudflare.com/api/auth/callback"
+  "https://king-prawn-app-4ujjs.ondigitalocean.app/auth/callback",
+  "https://king-prawn-app-4ujjs.ondigitalocean.app/auth/shopify/callback",
+  "https://king-prawn-app-4ujjs.ondigitalocean.app/api/auth/callback"
 ]
 
 [webhooks]
