@@ -17,6 +17,7 @@ RUN npm remove @shopify/cli
 COPY . .
 
 RUN npm run build
+RUN node --version
 RUN openssl version
 
 CMD ["npm", "run", "docker-start"]
