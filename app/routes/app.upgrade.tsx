@@ -13,7 +13,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     onFailure: async () => billing.request({
       plan: MONTHLY_PLAN,
       isTest: true,
-      returnUrl: `https://admin.shopify.com/store/${myShop}/apps/patch-customizer/app/price`,
+      returnUrl: `https://admin.shopify.com/store/${myShop}/apps/patch-customizer-1/app/price`,
     }),
   });
  
