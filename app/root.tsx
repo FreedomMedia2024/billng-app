@@ -8,8 +8,8 @@ import {
 import { json} from "@remix-run/node";
 export function loader() {
   const ENV = {
-    CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME ?? "",
-    CLOUDINARY_UPLOAD_PRESET: process.env.CLOUDINARY_UPLOAD_PRESET ?? "",
+    CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME ?? "dt7izmknv",
+    CLOUDINARY_UPLOAD_PRESET: process.env.CLOUDINARY_UPLOAD_PRESET ?? "rmciug9z",
   };
   console.log('yeah h',ENV);
   return new Response(JSON.stringify({ ENV }), {
