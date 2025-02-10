@@ -11,7 +11,10 @@ export function loader() {
     CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME ?? "",
     CLOUDINARY_UPLOAD_PRESET: process.env.CLOUDINARY_UPLOAD_PRESET ?? "",
   };
-  return Response.json({ ENV });
+  console.log(ENV);
+  return new Response(JSON.stringify({ ENV }), {
+    headers: { "Content-Type": "application/json" },
+  });
 }
 export default function App() {
   return (
