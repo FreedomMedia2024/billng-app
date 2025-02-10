@@ -11,7 +11,7 @@ export function loader() {
     CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME ?? "",
     CLOUDINARY_UPLOAD_PRESET: process.env.CLOUDINARY_UPLOAD_PRESET ?? "",
   };
-  console.log('yeah hy',ENV);
+  console.log('yeah h',ENV);
   return new Response(JSON.stringify({ ENV }), {
     headers: { "Content-Type": "application/json" },
   });
