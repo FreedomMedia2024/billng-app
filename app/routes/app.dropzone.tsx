@@ -163,7 +163,8 @@ export async function action({ request }: ActionFunctionArgs) {
             Variants: colorvariant,
             backImg: BackImg,
             colorname:colorname
-        }
+        };
+
         try {
             const ColorVariants = await db.colorVariants.create({
                 data
@@ -2017,6 +2018,6 @@ const formattedRangeTopembBarmLValue = formatTopembBarmLValue(rangeTopembBarmLVa
             </div>
         
         </Page>
-    );
+    );          
 
 }

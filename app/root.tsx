@@ -11,7 +11,7 @@ export function loader() {
     CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME ?? "",
     CLOUDINARY_UPLOAD_PRESET: process.env.CLOUDINARY_UPLOAD_PRESET ?? "",
   };
-  return json({  ENV });
+  return Response.json({ ENV });
 }
 export default function App() {
   return (
